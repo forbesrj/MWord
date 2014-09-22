@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>The M Word</title>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
+    <link href="css/lib/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+
+    <script src="js/lib/jquery.min.js"></script>
+</head>
+<body>
+    <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-after" data-anchor-target="#dragons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 0%, 0px); transform: translate3d(0px, 0%, 0px);">
+
+        <div class="parallax-image parallax-image-100 skrollable skrollable-after" style="-webkit-transform: translate3d(0px, 80%, 0px); transform: translate3d(0px, 80%, 0px); background-image: url(img/uh.jpg);" data-anchor-target="#dragons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+        <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+    </div>
+    <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-after" data-anchor-target="#bacons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 0%, 0px); transform: translate3d(0px, 0%, 0px);">
+
+        <div class="parallax-image parallax-image-100 skrollable skrollable-after" style="-webkit-transform: translate3d(0px, 80%, 0px); transform: translate3d(0px, 80%, 0px); background-image: url(img/uh2.jpg);" data-anchor-target="#bacons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+    </div>
+    <div class="parallax-image-wrapper parallax-image-wrapper-50 skrollable skrollable-between" data-anchor-target="#kittens + .gap" data-bottom-top="transform:translate3d(0px, 300%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 86.7678958785249%, 0px); transform: translate3d(0px, 86.7678958785249%, 0px);">
+
+        <div class="parallax-image parallax-image-50 skrollable skrollable-between" style="-webkit-transform: translate3d(0px, 80%%, 0px); transform: translate3d(0px, 25.29284164859%, 0px); background-image: url(http://media-cache-ec0.pinimg.com/736x/d6/15/16/d615169a6d275b3fb18c94e9df97460b.jpg);" data-anchor-target="#kittens + .gap" data-bottom-top="transform: translate3d(0px, -60%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);"></div>
+    </div>
+
+    <div id="skrollr-body">
+        <div class="header" id="dragons">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">The M Word</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+
+        </div>
+
+        <div class="gap gap-100" id="gapOne"></div>
+
+        <div class="content" id="bacons">
+            <h1>What is The M Word</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus est ac tortor tempus, vel maximus ex malesuada. Pellentesque odio turpis, consectetur nec libero non, faucibus vehicula lorem. Vestibulum volutpat, tortor eget iaculis lobortis, nibh tellus aliquet mi, sit amet accumsan risus purus ac leo. Donec dui turpis, placerat sit amet lorem venenatis, porttitor hendrerit massa. In a risus rutrum, pretium arcu sit amet, placerat felis. Nullam tempus, turpis a accumsan ornare, leo mi rhoncus lorem, quis laoreet tortor mauris nec quam. Nam ornare risus lorem.</p>
+            <p>Proin at efficitur elit. Nam pretium leo urna. Sed condimentum justo vitae nisl dictum, non eleifend velit vulputate. In interdum nulla sed tellus lobortis, vel sollicitudin neque suscipit. Nulla interdum nec arcu et vestibulum. Praesent varius orci sit amet enim imperdiet, nec mollis erat placerat. Fusce cursus blandit neque, eu sagittis augue luctus et. Etiam consectetur mauris auctor, venenatis lorem consectetur, mollis lectus. Nulla facilisi. Praesent venenatis consectetur mi, et mollis massa eleifend lobortis. In eget aliquam turpis. Fusce nec elit arcu. Nunc in efficitur libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur mollis lorem, quis rutrum eros lacinia quis. Suspendisse in hendrerit libero.</p>
+            <p>Mauris sed ipsum mauris. Vestibulum efficitur id lorem sed aliquam. Sed lorem justo, bibendum nec diam quis, euismod faucibus arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam blandit risus eu est ornare gravida. Proin enim velit, ultrices vitae risus et, rhoncus varius lorem. Integer porta ante a dictum elementum. In mollis venenatis tortor at tincidunt.</p>
+        </div>
+
+        <div class="gap gap-50" id="gapTwo"></div>
+
+        <div class="content content-full" id="kittens">
+            <h1>Audition Notice</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus est ac tortor tempus, vel maximus ex malesuada. Pellentesque odio turpis, consectetur nec libero non, faucibus vehicula lorem. Vestibulum volutpat, tortor eget iaculis lobortis, nibh tellus aliquet mi, sit amet accumsan risus purus ac leo. Donec dui turpis, placerat sit amet lorem venenatis, porttitor hendrerit massa. In a risus rutrum, pretium arcu sit amet, placerat felis. Nullam tempus, turpis a accumsan ornare, leo mi rhoncus lorem, quis laoreet tortor mauris nec quam. Nam ornare risus lorem.</p>
+            <p>Proin at efficitur elit. Nam pretium leo urna. Sed condimentum justo vitae nisl dictum, non eleifend velit vulputate. In interdum nulla sed tellus lobortis, vel sollicitudin neque suscipit. Nulla interdum nec arcu et vestibulum. Praesent varius orci sit amet enim imperdiet, nec mollis erat placerat. Fusce cursus blandit neque, eu sagittis augue luctus et. Etiam consectetur mauris auctor, venenatis lorem consectetur, mollis lectus. Nulla facilisi. Praesent venenatis consectetur mi, et mollis massa eleifend lobortis. In eget aliquam turpis. Fusce nec elit arcu. Nunc in efficitur libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur mollis lorem, quis rutrum eros lacinia quis. Suspendisse in hendrerit libero.</p>
+            <p>Mauris sed ipsum mauris. Vestibulum efficitur id lorem sed aliquam. Sed lorem justo, bibendum nec diam quis, euismod faucibus arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam blandit risus eu est ornare gravida. Proin enim velit, ultrices vitae risus et, rhoncus varius lorem. Integer porta ante a dictum elementum. In mollis venenatis tortor at tincidunt.</p>
+
+            <h2>Please Contact 123.456.7890</h2>
+        </div>
+
+        <div class="gap gap-50"></div>
+        <div class="content" id="done">
+            <h1>Contact us</h1>
+            <p>Mauris sed ipsum mauris. Vestibulum efficitur id lorem sed aliquam. Sed lorem justo, bibendum nec diam quis, euismod faucibus arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam blandit risus eu est ornare gravida. Proin enim velit, ultrices vitae risus et, rhoncus varius lorem. Integer porta ante a dictum elementum. In mollis venenatis tortor at tincidunt.</p>
+            <dl>
+                <dt>Phone</dt>
+                <dd>123.456.7890</dd>
+                <dt>Email</dt>
+                <dd><a href="#">email@mword.com</a></dd>
+                <dt>Hours</dt>
+                <dd> 24 - 7 - 365 </dd>
+            </dl>
+            <footer>
+                The M Word &copy; 2014
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/lib/skrollr.min.js"></script>
+    <script type="text/javascript">
+        skrollr.init({
+            smoothScrolling: false,
+            mobileDeceleration: 0.004
+        });
+    </script>
+</body>
+</html>

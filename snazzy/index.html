@@ -2,32 +2,33 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>The M Word</title>
+    <title>Entity M</title>
     <link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link href="css/lib/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="css/global.css" type="text/css" rel="stylesheet">
 
     <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="">
     <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-after" data-anchor-target="#dragons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 0%, 0px); transform: translate3d(0px, 0%, 0px);">
 
-        <div class="parallax-image parallax-image-100 skrollable skrollable-after" style="-webkit-transform: translate3d(0px, 80%, 0px); transform: translate3d(0px, 80%, 0px); background-image: url(http://media-cache-ec0.pinimg.com/736x/d6/15/16/d615169a6d275b3fb18c94e9df97460b.jpg);" data-anchor-target="#dragons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+        <div class="parallax-image parallax-image-100 skrollable skrollable-after" style="-webkit-transform: translate3d(0px, 80%, 0px); transform: translate3d(0px, 80%, 0px); background-image: url(img/ERIC%20L%20For%20Project%20M%20_%208.jpg);" data-anchor-target="#dragons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
         <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
     </div>
     <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-after" data-anchor-target="#bacons + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 0%, 0px); transform: translate3d(0px, 0%, 0px);">
 
-        <div class="parallax-image parallax-image-100 skrollable skrollable-after" style="-webkit-transform: translate3d(0px, 80%, 0px); transform: translate3d(0px, 80%, 0px); background-image: url(img/uh2.jpg);" data-anchor-target="#bacons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+        <div class="parallax-image parallax-image-100 skrollable skrollable-after" style="-webkit-transform: translate3d(0px, 80%, 0px); transform: translate3d(0px, 80%, 0px); background-image: url(img/ERIC%20L%20For%20Project%20M%20_%205%20.jpg);" data-anchor-target="#bacons + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
     </div>
     <div class="parallax-image-wrapper parallax-image-wrapper-50 skrollable skrollable-between" data-anchor-target="#kittens + .gap" data-bottom-top="transform:translate3d(0px, 300%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)" style="-webkit-transform: translate3d(0px, 86.7678958785249%, 0px); transform: translate3d(0px, 86.7678958785249%, 0px);">
 
-        <div class="parallax-image parallax-image-50 skrollable skrollable-between" style="-webkit-transform: translate3d(0px, 80%%, 0px); transform: translate3d(0px, 25.29284164859%, 0px); background-image: url(img/uh.jpg);" data-anchor-target="#kittens + .gap" data-bottom-top="transform: translate3d(0px, -60%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);"></div>
+        <div class="parallax-image parallax-image-50 skrollable skrollable-between" style="-webkit-transform: translate3d(0px, 80%%, 0px); transform: translate3d(0px, 25.29284164859%, 0px); background-image: url(img/IMG_20140815_070557.jpg);" data-anchor-target="#kittens + .gap" data-bottom-top="transform: translate3d(0px, -60%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);"></div>
     </div>
 
-    <div id="skrollr-body">
+    <div id="skrollr-body" data-target="#headerBar">
         <div class="header" id="dragons">
-            <nav class="navbar navbar-default" role="navigation">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -41,13 +42,11 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <div class="collapse navbar-collapse navbar-right" id="#headerBar">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Link</a></li>
+                            <li class="active"><a href="#about">About</a></li>
+                            <li><a href="#auditions">Auditions</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -57,27 +56,62 @@
 
         <div class="gap gap-100" id="gapOne"></div>
 
-        <div class="content" id="bacons">
-            <h1>What is The M Word</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus est ac tortor tempus, vel maximus ex malesuada. Pellentesque odio turpis, consectetur nec libero non, faucibus vehicula lorem. Vestibulum volutpat, tortor eget iaculis lobortis, nibh tellus aliquet mi, sit amet accumsan risus purus ac leo. Donec dui turpis, placerat sit amet lorem venenatis, porttitor hendrerit massa. In a risus rutrum, pretium arcu sit amet, placerat felis. Nullam tempus, turpis a accumsan ornare, leo mi rhoncus lorem, quis laoreet tortor mauris nec quam. Nam ornare risus lorem.</p>
-            <p>Proin at efficitur elit. Nam pretium leo urna. Sed condimentum justo vitae nisl dictum, non eleifend velit vulputate. In interdum nulla sed tellus lobortis, vel sollicitudin neque suscipit. Nulla interdum nec arcu et vestibulum. Praesent varius orci sit amet enim imperdiet, nec mollis erat placerat. Fusce cursus blandit neque, eu sagittis augue luctus et. Etiam consectetur mauris auctor, venenatis lorem consectetur, mollis lectus. Nulla facilisi. Praesent venenatis consectetur mi, et mollis massa eleifend lobortis. In eget aliquam turpis. Fusce nec elit arcu. Nunc in efficitur libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur mollis lorem, quis rutrum eros lacinia quis. Suspendisse in hendrerit libero.</p>
-            <p>Mauris sed ipsum mauris. Vestibulum efficitur id lorem sed aliquam. Sed lorem justo, bibendum nec diam quis, euismod faucibus arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam blandit risus eu est ornare gravida. Proin enim velit, ultrices vitae risus et, rhoncus varius lorem. Integer porta ante a dictum elementum. In mollis venenatis tortor at tincidunt.</p>
+        <div class="content content-full" id="bacons">
+        <a name="about"></a>
+            <h1>What is Entity M</h1>
+            <p>The Modern Male Revue: is a classy, sexy, live, theatrical show designed to bring women’s ideal masculine fantasies to life through dance, song, style, and performance art.</p>
+            <p>The production will showcase 10 high-energy musical numbers set to a variety of uniquely beautiful, staged, performance art forms.</p>
+
         </div>
 
         <div class="gap gap-50" id="gapTwo"></div>
 
-        <div class="content content-full" id="kittens">
+        <div class="content" id="kittens">
+            <a name="auditions"></a>
             <h1>Audition Notice</h1>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus est ac tortor tempus, vel maximus ex malesuada. Pellentesque odio turpis, consectetur nec libero non, faucibus vehicula lorem. Vestibulum volutpat, tortor eget iaculis lobortis, nibh tellus aliquet mi, sit amet accumsan risus purus ac leo. Donec dui turpis, placerat sit amet lorem venenatis, porttitor hendrerit massa. In a risus rutrum, pretium arcu sit amet, placerat felis. Nullam tempus, turpis a accumsan ornare, leo mi rhoncus lorem, quis laoreet tortor mauris nec quam. Nam ornare risus lorem.</p>
-            <p>Proin at efficitur elit. Nam pretium leo urna. Sed condimentum justo vitae nisl dictum, non eleifend velit vulputate. In interdum nulla sed tellus lobortis, vel sollicitudin neque suscipit. Nulla interdum nec arcu et vestibulum. Praesent varius orci sit amet enim imperdiet, nec mollis erat placerat. Fusce cursus blandit neque, eu sagittis augue luctus et. Etiam consectetur mauris auctor, venenatis lorem consectetur, mollis lectus. Nulla facilisi. Praesent venenatis consectetur mi, et mollis massa eleifend lobortis. In eget aliquam turpis. Fusce nec elit arcu. Nunc in efficitur libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur mollis lorem, quis rutrum eros lacinia quis. Suspendisse in hendrerit libero.</p>
-            <p>Mauris sed ipsum mauris. Vestibulum efficitur id lorem sed aliquam. Sed lorem justo, bibendum nec diam quis, euismod faucibus arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam blandit risus eu est ornare gravida. Proin enim velit, ultrices vitae risus et, rhoncus varius lorem. Integer porta ante a dictum elementum. In mollis venenatis tortor at tincidunt.</p>
-
-            <h2>Please Contact 123.456.7890</h2>
+            <h3>Who we are looking for</h3>
+            <ul>
+                <li>Dancers</li>
+                <li>Singers (ability to play musical instruments encouraged)</li>
+                <li>MCs</li>
+                <li>Comedians</li>
+                <li>Multi-talented movers with acting abilities</li>
+            </ul>
+            <h6>Selected performers are required give a 6 month commitment to the project.  Must be 21+ years of age</h6>
+            <h3>Professional talent preference</h3>
+            <p>Paid Non-Union</p>
+            <h3>Audition date</h3>
+            <dl>
+                <dt>DANCE + PERFORMERS Auditions: Sept. 20, 2014 (@ Sweatshop Dance Studios,  937 Santa Fe Dr. Denver, CO 80204) 11am-1pm  (with possible call backs from 2pm-4pm | if needed)</dt>
+                <dd>Dancers must prepare a 1-2 minute self-choreographed piece to present.</dd>
+                <dt>SINGING + PERFORMANCE Auditions: September 20, 2014 (@ Sweatshop Dance Studios) | 11am-1pm | (with possible call backs from 2pm-4pm | if needed).</dt>
+                <dd> Singers must have a 1-2 minute song to present acapella and actors must have a 1-2 minute monologue to present.</dd>
+            </dl>
+            <h6>Please send head shot or links to online photos/video, resume, and availability for possible call back to casting@moistshow.com</h6>
+            <h3>Rehearsal schedule</h3>
+            <p>Formal Rehearsals begins mid-September through October 2014.  Not all dancers are needed at every rehearsal.  Rehearsal schedule will be based on the availability of the cast.</p>
+            <h3>Opening night</h3>
+            <p>The Show Officially Opens on November 15th@ Casselman’s Bar & Venue, Denver. Post PremierePerformances will be once a month, 2nd show December 13th.</p>
+            <h2>Cast + Characters Breakdown</h2>
+            <h3>Male characters</h3>
+            <p>6-7 Male Dancers of all types and builds with strong dance/movement performance background (triple threat preferred but not necessary). </p>
+            <h3>Female characters</h3>
+            <p>Looking for 1-3 Female Dancers of all body types and builds (triple threat preferred but not necessary). Dancers must have a solid grounding in contemporary, jazz, hip-hop or other dance styles. Experienced dancers with good multi-disciplinary training and strong stage experience.</p>
+            <h3>Singers + performers</h3>
+            <p>1-2 Singer/Comedian/MC: looking for multi-talented performance artists.</p>
+            <h3>The IDEAL TALENT</h3>
+            <p>Performers with strong athletic build and ability, experienced dancers with good training and strong stage experience, performers with strong multi-disciplinary dance techniques, backgrounds, with the ability to improvise or freestyle. Performers with strong acrobatic skills, B-Boy, capoeira, martial arts, or yoga are strongly encouraged to apply.</p>
+            <h3>Choreographer + co-writer</h3>
+            <p> Jacob Mora, Founder, Moraporvida Contemporary Dance</p>
+            <h3>Casting director, writer, designer, director</h3>
+            <p>Justice Kwesi Kwarteng, BFA, MFA</p>
+            <h2>For Questions, please write to us @ casting@moistshow.com </h2>
+            <h4>Moist is produced by Two Sisters Productions, LLC</h4>
         </div>
 
         <div class="gap gap-50"></div>
         <div class="content" id="done">
+            <a name="contact"></a>
             <h1>Contact us</h1>
             <p>Mauris sed ipsum mauris. Vestibulum efficitur id lorem sed aliquam. Sed lorem justo, bibendum nec diam quis, euismod faucibus arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam blandit risus eu est ornare gravida. Proin enim velit, ultrices vitae risus et, rhoncus varius lorem. Integer porta ante a dictum elementum. In mollis venenatis tortor at tincidunt.</p>
             <dl>
@@ -89,7 +123,29 @@
                 <dd> 24 - 7 - 365 </dd>
             </dl>
             <footer>
-                The M Word &copy; 2014
+                Entity M &copy; 2014
+                <div class="social">
+                    <ul class="nav">
+                        <li>
+                            <a href="https://www.facebook.com/themoistshow" target="_blank">&#xe227;</a>
+                        </li>
+                        <li>
+                            <a href="http://www.pinterest.com/themoistshow/" target="_blank">&#xe264;</a>
+                        </li>
+                        <li>
+                            <a href="http://themoistshow.tumblr.com/" target="_blank">&#xe285;</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/moistshow" target="_blank">&#xe286;</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCvxGuKAGjxTMIR9O-_5_b9Q" target="_blank">&#xe299;</a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/moistshow" target="_blank">&#xe300;</a>
+                        </li>
+                    </ul>
+                </div>
             </footer>
         </div>
     </div>
@@ -100,6 +156,7 @@
             smoothScrolling: false,
             mobileDeceleration: 0.004
         });
+        $('body').scrollspy({ target: '#headerBar' })
     </script>
 </body>
 </html>
